@@ -32,7 +32,7 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light px-3" id="nav">
       <div class="container-fluid">
         <a class="navbar-brand me-auto" href="#">DT.</a>
         <button
@@ -47,7 +47,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse container-fluid"
+          class="collapse navbar-collapse navbarLinks"
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
@@ -62,36 +62,43 @@
     </nav>
     <script src="index.js"></script>
 
-    <form name="mytheme">
-      <label class="btToggle">
-        <span class="btn">
-          <input type="checkbox" name="theme-mode" />
-          <span class="slider"></span>
-        </span>
-        <span class="label">White mode</span>
-      </label>
-    </form>
-
-    <div class="w-100 text-center mt-5 d-flex flex-column align-items-center">
-      <div class="display-4 fw-bolder">Hi, I am Darlan Tane.</div>
-      <div class="fs-3 my-4">
-        A Data Analyst & Agroindustrial Engineering Student.
-      </div>
-      <p class="w-100 w-sm-50 px-3 fs-5">
-        I am currently looking for a 6 month final year internship from 16
-        January 2022 in the fields of data science or data analytics.
-      </p>
-      <div class="my-4">
-        <a class="btn btn-outline-primary" href="./cv.pdf" target="_blank"
-          >Resume</a
-        >
-        <i class="bi bi-github mx-2"></i>
-        <i class="bi bi-linkedin"></i>
+    <div
+      class="w-100 text-center d-flex flex-column align-items-center parallax py-5 position-relative"
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 overlay"
+        style="z-index: 0"
+      ></div>
+      <div class="pb5" style="z-index: 1">
+        <form name="mytheme">
+          <label class="btToggle">
+            <span class="btn">
+              <input type="checkbox" name="theme-mode" />
+              <span class="slider"></span>
+            </span>
+            <span class="label">White mode</span>
+          </label>
+        </form>
+        <div class="display-4 fw-bolder pt-5 welcome">
+          Hi, I am Darlan Tane.
+        </div>
+        <div class="fs-3 my-4 welcome">
+          A Data Analyst & Agroindustrial Engineering Student.
+        </div>
+        <p class="w-100 w-sm-50 px-3 fs-5 welcome">
+          I am currently looking for a 6 month final year internship from 16
+          January 2022 in the fields of data science or data analytics.
+        </p>
+        <div class="my-4">
+          <a class="btn btn-light" href="./cv.pdf" target="_blank">Resume</a>
+          <i class="bi bi-github mx-2 welcome"></i>
+          <i class="bi bi-linkedin welcome"></i>
+        </div>
       </div>
     </div>
 
     <div class="d-flex w-100 flex-column align-items-center text-center">
-      <div class="fs-1 my-4 fw-bolder">EDUCATION</div>
+      <div class="fs-1 my-5 fw-bolder">EDUCATION</div>
       <div class="w-sm-75 w-100">
         <div class="row my-4">
           <div
@@ -137,7 +144,7 @@
     </div>
 
     <div class="d-flex w-100 flex-column align-items-center text-center">
-      <div class="fs-1 my-4 fw-bolder">EXPERIENCES</div>
+      <div class="fs-1 my-5 fw-bolder">EXPERIENCES</div>
       <div class="w-sm-75 w-100">
         <div class="row my-4">
           <div
@@ -145,7 +152,6 @@
           >
             Production Line Analyst (Internship) <br />
             Kumofoods l 33 Rue de l'industrie<br />
-            91210 Draveil<br />
             Avril - Août 2022
           </div>
           <div class="col-2 d-sm-flex d-none">
@@ -153,7 +159,7 @@
             <div class="h-100 w-50"></div>
           </div>
           <div
-            class="col-sm-5 col-12 fs-5 d-flex flex-column justify-content-center text-sm-start text-center"
+            class="col-sm-4 col-12 fs-5 d-flex flex-column justify-content-center text-sm-start text-center"
           >
             My missions :<br />
             - The optimisation of production costs through : <br />
@@ -173,8 +179,6 @@
           >
             Scientific Research Assistant (Internship) <br />
             UNILASALLE T&A Research Unit<br />
-            3 Rue du tronquet<br />
-            76130 Mont - Saint - Aignan<br />
             Avril 2021
           </div>
           <div class="col-2 d-sm-flex d-none">
@@ -182,7 +186,7 @@
             <div class="h-100 w-50"></div>
           </div>
           <div
-            class="col-sm-5 col-12 fs-5 d-flex flex-column justify-content-center text-sm-start text-center"
+            class="col-sm-4 col-12 fs-5 d-flex flex-column justify-content-center text-sm-start text-center"
           >
             My mission :<br />
             Optimise the protocol for the production of Polyhydroxyalkanoates
@@ -197,10 +201,10 @@
     </div>
 
     <div class="d-flex w-100 flex-column align-items-center text-center">
-      <div class="fs-1 my-4 fw-bolder">PROJECTS</div>
+      <div class="fs-1 my-5 fw-bolder">PROJECTS</div>
 
-      <div>
-        <div class="card m-3 d-inline-block">
+      <div class="d-flex flex-column flex-sm-row align-items-center">
+        <div class="card m-3">
           <div
             class="card-body"
             style="min-width: 18rem; max-width: 18rem; height: 18rem"
@@ -217,7 +221,7 @@
             >
           </div>
         </div>
-        <div class="card m-3 d-inline-block">
+        <div class="card m-3">
           <div
             class="card-body"
             style="min-width: 18rem; max-width: 18rem; height: 18rem"
@@ -235,7 +239,7 @@
             >
           </div>
         </div>
-        <div class="card m-3 d-inline-block">
+        <div class="card m-3">
           <div
             class="card-body"
             style="min-width: 18rem; max-width: 18rem; height: 18rem"
@@ -251,7 +255,7 @@
             >
           </div>
         </div>
-        <div class="card m-3 d-inline-block">
+        <div class="card m-3">
           <div
             class="card-body"
             style="min-width: 18rem; max-width: 18rem; height: 18rem"
@@ -271,7 +275,7 @@
     </div>
 
     <div class="d-flex w-100 flex-column align-items-center text-center">
-      <div class="fs-1 my-4 fw-bolder">SKILLS</div>
+      <div class="fs-1 my-5 fw-bolder">SKILLS</div>
       <div class="d-flex flex-sm-row flex-column">
         <button type="button" class="btn btn-secondary m-3">Python</button>
         <button type="button" class="btn btn-secondary m-3">R</button>
@@ -286,8 +290,13 @@
     </div>
 
     <div class="d-flex w-100 flex-column align-items-center text-center">
-      <div class="fs-1 my-4 fw-bolder">CONTACT</div>
-      <button type="button" class="btn btn-outline-primary">email me</button>
+      <div class="fs-1 my-5 fw-bolder">CONTACT</div>
+      <a
+        style="width: 160px"
+        class="btn btn-secondary"
+        href="mailto:huneric.tanefopa@etu.unilasalle.fr"
+        >Email me</a
+      >
     </div>
 
     <footer

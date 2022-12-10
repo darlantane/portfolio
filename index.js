@@ -3,6 +3,25 @@ function setMode(oEvent) {
     aModes[Number(!this.checked)],
     aModes[Number(this.checked)]
   );
+  document
+    .getElementById("nav")
+    .classList.replace(
+      aModes[Number(!this.checked)],
+      aModes[Number(this.checked)]
+    );
+  if (this.checked) {
+    document.getElementById("nav").classList.replace("bg-light", "nav-dark");
+    document.body.style.backgroundImage = 'url("./w-dots.png")';
+  } else {
+    document.getElementById("nav").classList.replace("nav-dark", "bg-light");
+    document.body.style.backgroundImage = 'url("./dots.png")';
+  }
+  const cards = document.getElementsByClassName("card");
+  for (const card of cards) {
+    card.style.backgroundColor = this.checked
+      ? "rgb(54, 54, 54)"
+      : "rgb(240, 240, 240)";
+  }
   localStorage.setItem("mode", aModes[Number(this.checked)]);
   this.parentNode.nextElementSibling.innerHTML = this.checked
     ? "Dark mode"
