@@ -1,8 +1,106 @@
-div.card, button {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+body {
+  background-color: rgb(250, 250, 250);
+  color: rgb(54, 54, 54);
+  background-image: url("./dots.png");
+  font-family: "Titillium Web";
+}
 
-  div.d-flex {
-    animation: flash; 
-    animation-duration: 2s; 
-  }
+div.d-flex {
+  margin-top: 3%;
+}
+
+div.card,
+button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.nav-link,
+a.navbar-brand {
+  color: rgb(80, 80, 80);
+}
+
+a.nav-link:hover {
+  color: rgb(0, 183, 255);
+}
+
+.card {
+  color: rgb(80, 80, 80);
+}
+
+/*form {
+  padding: 5px;
+  border-color: #313131;
+  border-style: solid;
+  border-width: 1px 0;
+}*/
+
+form {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.btToggle .btn {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  line-height: 34px;
+  color: rgb(255, 255, 255);
+}
+
+/* Hide default HTML checkbox */
+.btToggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.btToggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #232323;
+  border-radius: 34px;
+  white-space: nowrap;
+}
+
+.btToggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.btToggle input:checked + .slider {
+  background-color: rgb(255, 255, 255);
+}
+
+.btToggle input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+  color: #232323;
+}
+
+.btToggle input:checked + .slider:before {
+  right: 4px;
+  left: auto;
+  background-color: #232323;
+}
+
+/* DARK MODE */
+.mode-dark {
+  background-color: #232323;
+  color: rgb(255, 255, 255);
+}
+
+.mode-dark form {
+  background-color: #232323;
+  border-color: #ccc;
+}
