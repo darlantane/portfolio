@@ -11,6 +11,14 @@ body {
   ;
 }
 
+.greenTitle{
+  color: #71B023;
+}
+
+.greenBorder{
+  border-color: #71B023 !important;
+}
+
 .navbarLinks {
   flex-grow: 0 !important;
 }
@@ -39,11 +47,11 @@ a.navbar-brand, a.card-link {
 }
 
 .nav-dark {
-  background-color: #232323;
+  background-color: rgb(54, 54, 54);
 }
 
 a.nav-link:hover {
-  color: rgb(0, 183, 255);
+  color: #71B023;
 }
 
 
